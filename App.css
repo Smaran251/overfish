@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+}
+
+/* LOGIN */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #003459 0%, #0077b6 100%);
+}
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.login-card input {
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login-card button {
+    width: 95%;
+    padding: 12px;
+    background: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #003459;
+    color: white;
+}
+.logout-btn {
+    background: #ff4b2b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #0077b6;
+    color: white;
+}
+
+/* DASHBOARD GRID */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ALERTS */
+.alerts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.alert-item {
+    padding: 10px;
+    border-left: 5px solid #ccc;
+    background: #f9f9f9;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+.alert-item.high { border-left-color: #ff4b2b; background: #ffebee; }
+.alert-item.medium { border-left-color: #ffa500; background: #fffbe6; }
+.alert-item.low { border-left-color: #4caf50; background: #e8f5e9; }
+.alert-date {
+    font-size: 11px;
+    color: gray;
+}
